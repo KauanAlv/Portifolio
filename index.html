@@ -7,6 +7,7 @@
 	<title>Portfólio Kauan Alves</title>
 	<link rel="stylesheet" href="./css/reset.css">
 	<link rel="stylesheet" href="./css/main.css">
+	<script src="./main.js" defer></script>
 </head>
 
 <body class="is-preload">
@@ -105,29 +106,69 @@
 					<div class="posts">
 
 						<article>
-							<a href="#" class="image">
-								<img src="images/projeto1.jpg" alt="">
-							</a>
-							<h3>Simulador de Financiamento</h3>
-							<p>Aplicação para cálculo de juros compostos e simulação de parcelas.</p>
+							<img src="./img/rifa-pascoa.png" alt="Foto da Rifa de Páscoa">
+							<h3>Rifa de Páscoa</h3>
+							<p>Participei da construção de um software de rifa, cujo tema principal era a páscoa, o
+								projeto foi realizado por mim e mais 3 desenvolvedores.
+								O projeto envolve: <br>
+								Front-end utilizando HTML, CSS e JavaScript; <br>
+								Back-end utilizando JavaScript; <br>
+								Banco de dados utilizado foi o Firebase.
+							</p>
 							<ul class="actions">
-								<li><a href="#" class="button">VER PROJETO</a></li>
+								<li><a href="https://github.com/KauanAlv/rifa_pascoa" class="button">VER PROJETO</a>
+								</li>
 							</ul>
 						</article>
 
 						<article>
-							<a href="#" class="image">
-								<img src="images/projeto2.jpg" alt="">
-							</a>
+							<img src="./img/api-estado-cidade.png" alt="API de estados e cidades">
 							<h3>API de Estados e Cidades</h3>
-							<p>Projeto com consumo de API para seleção dinâmica de dados.</p>
+							<p>Primeira API realizada com o intuido de pesquisar os Estados e Cidades por meio de busca,
+								utilizando JavaScript para o back-end.
+								<br>
+								Esta API está publicada no Render.
+							</p>
 							<ul class="actions">
-								<li><a href="#" class="button">VER PROJETO</a></li>
+								<li><a href="https://github.com/KauanAlv/API-Estados-Cidades" class="button">VER PROJETO</a></li>
+							</ul>
+						</article>
+
+						<article>
+							<img src="./img/api-whatsapp.png" alt="API do whatsapp">
+							<h3>API do Whatsapp</h3>
+							<p>Uma API para simular o whatsapp, buscando os usuários, contatos, mensagens e um filtro
+								para pesquisar uma mensagem especifica daquela conversa, utilizando JavaScript para o
+								back-end. <br>
+								Esta API esta publicada no Render.
+							</p>
+							<ul class="actions">
+								<li><a href="https://github.com/KauanAlv/API-Whatsapp" class="button">VER PROJETO</a>
+								</li>
+							</ul>
+						</article>
+
+						<article>
+							<img src="./img/PI-Estacionamento.png" alt="Projeto Integrador - Estacionamento">
+							<h3>Projeto de Estacionamento</h3>
+							<p> O objetivo foi criar um software que controla um estacionamento, armazenando dados do
+								veículo, além do back-end foi desenvolvido uma landing page para o projeto. <br>
+								A linguagem utilizada no back-end foi Java; <br>
+								Para o front-end foi utilizado HTML e CSS.
+							</p>
+							<ul class="actions">
+								<li><a href="https://github.com/KauanAlv/P.I-Estacionamento" class="button">VER
+										PROJETO</a>
+								</li>
 							</ul>
 						</article>
 
 					</div>
 				</section>
+
+				<div id="lightbox" class="lightbox">
+					<img id="lightbox-img" src="" alt="">
+				</div>
 
 				<!-- Experiência -->
 				<section>
@@ -136,21 +177,49 @@
 					</header>
 
 					<p>
-						Atualmente curso o ensino médio técnico em Recursos Humanos pela ETEC e
-						Desenvolvimento de Sistemas pelo SENAI. Busco minha primeira oportunidade
+						Atualmente curso o ensino médio técnico em Recursos Humanos pela ETEC - Prefeito Braz Paschoalin (Centro Paula Souza) e
+						Desenvolvimento de Sistemas pelo SENAI - Professor Vicente Amato. Busco minha primeira oportunidade
 						na área de tecnologia para aplicar meus conhecimentos e evoluir profissionalmente.
 					</p>
 				</section>
 
 				<!-- Contato -->
-				<section>
+				<section id="contato">
 					<header class="major">
-						<h2>Contato</h2>
+						<h2>Contatos</h2>
 					</header>
 
-					<p>Email: kauan0alvess@gmail.com</p>
-					<p>Linkedin: <a href="https://www.linkedin.com/in/kauan-alves1/">kauan-alves1</a></p>
-					<p>Github: <a href="https://github.com/KauanAlv">KauanAlv</a></p>
+					<div class="contato-container">
+
+						<!-- ESQUERDA -->
+						<div class="contato-info">
+							<p>
+							  <strong>Email:</strong> <a href="mailto:kauan0alvess@gmail.com">kauan0alvess@gmail.com</a> <br>
+							  Entre em contato comigo para oportunidades, projetos ou qualquer dúvida.
+							</p>
+						  
+							<p>
+							  <strong>LinkedIn:</strong> 
+							  <a href="https://www.linkedin.com/in/kauan-alves1/">kauan-alves1</a> <br>
+							  Acesse meu perfil profissional para ver experiências, conexões e recomendações.
+							</p>
+						  
+							<p>
+							  <strong>GitHub:</strong> 
+							  <a href="https://github.com/KauanAlv">KauanAlv</a> <br>
+							  Explore meus projetos, códigos e veja mais sobre minhas habilidades em desenvolvimento.
+							</p>
+						  </div>
+
+						<!-- DIREITA (DESTAQUE) -->
+						<div class="contato-card">
+							<h3>Entre em contato</h3>
+							<p>Fique à vontade para entrar em contato para discutir projetos, oportunidades ou
+								parcerias.</p>
+							<a href="https://mail.google.com/mail/?view=cm&to=kauan0alvess@gmail.com&su=Contato%20via%20Portf%C3%B3lio&body=Ol%C3%A1%20Kauan,%20vim%20pelo%20seu%20portf%C3%B3lio..." target="_blank"  class="button">Enviar Email</a>
+						</div>
+
+					</div>
 				</section>
 
 			</div>
