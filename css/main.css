@@ -1,0 +1,226 @@
+@import url(fontawesome-all.min.css);
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600|Roboto+Slab:400,700");
+
+/* ================= BASE ================= */
+body {
+  color: #7f888f;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.65;
+}
+
+p {
+  margin: 0 0 2em 0;
+}
+
+h1, h2, h3 {
+  color: #3d4449;
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
+  margin: 0 0 1em 0;
+}
+
+h1 { font-size: 3.5rem; }
+h2 { font-size: 1.75rem; }
+h3 { font-size: 1.25rem; }
+
+/* ================= MAIN ================= */
+#main {
+  width: 100%;
+}
+
+#main > .inner {
+  max-width: 110em;
+  margin: 0 auto;
+  padding: 0 5em;
+}
+
+#main > .inner > section {
+  padding: 5em 0 3em 0;
+  border-top: solid 2px rgba(210, 215, 217, 0.75);
+}
+
+#main > .inner > section:first-of-type {
+  border-top: 0;
+}
+
+/* ================= HEADER ================= */
+#header {
+  display: flex;
+  border-bottom: solid 5px #f56a6a;
+  padding: 4em 0 1em 0;
+}
+
+/* ================= BANNER ================= */
+#banner {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+#banner .content p:first-of-type {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+#banner .image img {
+  width: 60%;
+}
+
+#banner .image {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+}
+
+#banner .image img {
+  width: 80%;
+  border-radius: 0.5em;
+}
+
+/* ================= HABILIDADES ================= */
+.features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.features article {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.features article .icon img {
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+  filter: invert(41%) sepia(82%) saturate(459%) hue-rotate(314deg) brightness(95%) contrast(92%);
+}
+
+.features article .icon {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f56a6a;
+}
+
+.features article .icon:before {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  z-index: 1;
+}
+
+.features article .icon:after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border: 2px solid rgba(210, 215, 217, 0.75);
+  transform: rotate(45deg);
+}
+
+/* ================= PROJETOS ================= */
+.posts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.posts article {
+  display: flex;
+  flex-direction: column;
+}
+
+.posts img {
+  width: 100%;
+  border-radius: 0.5em;
+}
+
+/* ================= BOTÃO ================= */
+.button {
+  display: inline-block;
+  font-family: "Roboto Slab", serif;
+  color: #f56a6a;
+  border: 2px solid #f56a6a;
+  border-radius: 0.4em;
+  padding: 0.8em 1.5em;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* ================= RESPONSIVO ================= */
+
+/* Tablet */
+@media (max-width: 900px) {
+
+  #main > .inner {
+    padding: 0 2em;
+  }
+
+  #banner {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  #banner .content,
+  #banner .image {
+    width: 100%;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+  }
+
+  .posts {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mobile (iPhone SE) */
+@media (max-width: 480px) {
+
+  h1 {
+    font-size: 2em;
+  }
+
+  #header {
+    padding: 2em 0 1em 0;
+  }
+
+  .features article {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .features article .icon {
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (min-width: 981px) {
+
+  body {
+    font-size: 1.1rem;
+  }
+
+  h1 {
+    font-size: 3.8em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  h3 {
+    font-size: 1.4em;
+  }
+
+  #banner .content p:first-of-type {
+    font-size: 1.3rem;
+  }
+
+}
