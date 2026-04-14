@@ -25,13 +25,13 @@ lightboxImg.addEventListener("click", (e) => {
     lightboxImg.style.transform = "scale(1.5)";
     zoomAtivo = true;
   } else {
-    // volta ao normal se clicar de novo (opcional 🔥)
+    // volta ao normal se clicar de novo
     lightboxImg.style.transform = "scale(1)";
     zoomAtivo = false;
   }
 });
 
-// Clique fora = fecha
+// Clique fora fecha
 lightbox.addEventListener("click", () => {
   lightbox.classList.remove("active");
 });
